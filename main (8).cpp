@@ -171,8 +171,8 @@ class Goat{
 int main()
 {
     int input;
-    int mapWidth = 7;
-    int mapHeight = 7;
+    int mapWidth = 20;
+    int mapHeight = 20;
     int probability = 50;
     Map *m = new Map(mapWidth, mapHeight);
     vector<Goat*> goats;
@@ -188,7 +188,9 @@ int main()
     
     m->printMap();
     cout << "Starting map. Press 1 to continue:" << endl << endl;
-    cin >> input;
+    //cin >> input;
+    input = 1;
+    int count = 0;
     while(input == 1){
         input = 0;
         for(int i = 0; i < goats.size(); i++){
@@ -197,7 +199,9 @@ int main()
                 input = 1;
             }
         }
-        m->printMap();
+        //m->printMap();
+        count++;
     }
+    cout << count << endl;
     return 0;
 }
