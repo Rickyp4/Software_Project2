@@ -9,3 +9,7 @@ while the gpu implementation took 38 seconds and 23,524 cycles. These are from a
 which uses the same seed every time. The cpu and gpu algorithms are also slightly different, partially due to the need to handle collisions.
 
 The current output.txt file is for a map size of 11x11 (13x13 including borders) and goat density of 50%. The number of iterations was 3,939.
+
+The Jenkinsfile doesn't do any testing, it was simply to make sure Jenkins was accessing the repository correctly.
+
+Github self link https://github.com/Rickyp4/Software_Project2/tree/main
